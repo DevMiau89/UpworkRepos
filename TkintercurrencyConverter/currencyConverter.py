@@ -18,8 +18,6 @@ for cube in rootXML.findall('.//ex:Cube[@currency]', namespaces=namespaces):
     print(cube.attrib['currency'], cube.attrib['rate'])
 
 
-
-
 class CurrencyConverter(tk.Tk):
     def __init__(self, parent):
         tk.Tk.__init__(self, parent)
